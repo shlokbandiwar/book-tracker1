@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700;900&amp;family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container": "#eeeeee",
+                    "secondary-fixed": "#c6e9e9",
+                    "primary-container": "#604503",
+                    "tertiary-fixed": "#ffdbcb",
+                    "inverse-surface": "#2f3131",
+                    "error-container": "#ffdad6",
+                    "surface-tint": "#775a19",
+                    "on-secondary": "#ffffff",
+                    "surface-container-low": "#f3f3f3",
+                    "primary-fixed-dim": "#e9c176",
+                    "error": "#ba1a1a",
+                    "on-error-container": "#93000a",
+                    "on-tertiary-container": "#ddb09b",
+                    "tertiary": "#492c1d",
+                    "secondary-container": "#c6e9e9",
+                    "surface-bright": "#f9f9f9",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary-fixed": "#002020",
+                    "on-secondary-container": "#4a6a6a",
+                    "on-tertiary-fixed-variant": "#603f2f",
+                    "on-secondary-fixed-variant": "#2c4c4c",
+                    "on-primary": "#ffffff",
+                    "on-primary-fixed-variant": "#5d4201",
+                    "secondary-fixed-dim": "#abcdcd",
+                    "surface-dim": "#dadada",
+                    "on-tertiary": "#ffffff",
+                    "secondary": "#446464",
+                    "on-background": "#1a1c1c",
+                    "inverse-on-surface": "#f1f1f1",
+                    "background": "#f9f9f9",
+                    "on-error": "#ffffff",
+                    "primary-fixed": "#ffdea5",
+                    "inverse-primary": "#e9c176",
+                    "on-primary-container": "#dab46b",
+                    "on-tertiary-fixed": "#2e1508",
+                    "outline": "#717878",
+                    "tertiary-fixed-dim": "#ebbda7",
+                    "on-primary-fixed": "#261900",
+                    "on-surface-variant": "#414848",
+                    "surface-container-high": "#e8e8e8",
+                    "on-surface": "#1a1c1c",
+                    "tertiary-container": "#634232",
+                    "surface": "#f9f9f9",
+                    "surface-variant": "#e2e2e2",
+                    "outline-variant": "#c1c8c7",
+                    "primary": "#443000",
+                    "surface-container-highest": "#e2e2e2"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>.material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24
+    }
+.grain-overlay {
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuBVWFVmVRijbNesLH0YzkY7MuHdEH09d9_CMoREdwaUQcaIgeh1HPZgiWOMTJFIucfwhtMmYcBLut0i1MolxYQm6CUM71zQFIBSjfARJQazJ9ZRDVlkRAq0xa7TphXUQbXHoSvVMxN2xdajkFE1BvufOYyMgqugnx2QwS99Rat8vEsDGqA1nqnM1rDiUhNQehESAlAD31OFq6zPQO5BM5-rFPRwLXinue9pVu6y8km6EWfnKqTt3pcFoxjuU4F5PLxZ-dUQq4_ic5E);
+    opacity: 0.02;
+    pointer-events: none
+    }</style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface font-body text-on-surface selection:bg-secondary-fixed selection:text-on-secondary-fixed min-h-screen">
+<div class="fixed inset-0 grain-overlay z-[60]"></div>
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#f9f9f9]/80 dark:bg-[#1a1c1c]/80 backdrop-blur-xl flex justify-between items-center px-6 py-4 w-full">
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-[#443000] dark:text-[#604503] hover:bg-[#e2e2e2]/40 transition-colors p-2 rounded-full duration-200 scale-95" data-icon="search">search</button>
+</div>
+<h1 class="font-noto-serif font-black text-2xl text-[#1a1c1c] dark:text-[#f9f9f9] tracking-tight">The Archive</h1>
+<div class="w-10 h-10 rounded-full overflow-hidden border border-outline-variant/20">
+<img class="w-full h-full object-cover" data-alt="close-up portrait of a thoughtful man in a library with warm lighting and soft book backgrounds" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRPt9792a9J8MPMQgifHVNG2fi7Whsfdficv10zVPzQhUDzoZ81Uk5VI07Oe5ERPHphqXYN74ojF7PqTkqceBvjLkx4UsRZvqjFRVkTvPlugYZGIcWXtSMWlmfDBlkf8KAc4zpuBC6sbCcLGoGkTA8Ve7viM1bYnCbk03vYxIIGhcC6OIodhuV3nrz8bNeJj4xc7QuPNrH5_nVjQwDoeT10ZQZpkLe31d37SnXJL4lefVEt5yucE1_BTG87YE18vRknUGLWqPodPs"/>
+</div>
+</header>
+<main class="pt-24 pb-32 px-6 max-w-5xl mx-auto">
+<!-- Hero Section: User Identity -->
+<section class="mb-16 flex flex-col md:flex-row items-center md:items-end gap-8">
+<div class="relative">
+<div class="w-32 h-44 rounded-xl overflow-hidden shadow-2xl rotate-[-2deg] transition-transform hover:rotate-0 duration-500">
+<img class="w-full h-full object-cover" data-alt="premium portrait of a literature enthusiast, scholarly aesthetic, soft natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7wYyuTkAUhz9fW8tSQ9f0zgnlCfnQlHt39tylYu-DXLwnlc29do4URWVJQt8ybc3KXmnRfH9Hr9MAlDHqi8dEyYJFrcih_LzSZtrcL3J1EmaPrNXIl2OGpis_KAyvsJH7F6guX1xuQp7MHsmfNvYWaX6x4vis7JFWjoBJ3CHteBsXlOe9R8aKINntOOhzBvhE6JWFyQXGiQm164XD6-2wxs7QBg2HhWg3qhlca7pIk28F3Gu2shl3AS72rf_SGF0-Iu2l-akSpqI"/>
+</div>
+<div class="absolute -bottom-2 -right-2 bg-primary text-on-primary w-10 h-10 rounded-full flex items-center justify-center shadow-lg">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+</div>
+<div class="text-center md:text-left flex-1">
+<p class="font-label text-[0.75rem] uppercase tracking-widest text-secondary font-bold mb-2">Member since 2021</p>
+<h2 class="font-headline text-5xl md:text-6xl font-bold leading-tight mb-4">Julian Thorne</h2>
+<div class="flex flex-wrap justify-center md:justify-start gap-6 text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="font-bold text-primary">124</span>
+<span class="font-label text-xs uppercase tracking-tighter">Books Archived</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-bold text-primary">12</span>
+<span class="font-label text-xs uppercase tracking-tighter">Current Reads</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-bold text-primary">8.4k</span>
+<span class="font-label text-xs uppercase tracking-tighter">Pages Devoured</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Achievements: Asymmetric Bento Grid -->
+<section class="mb-20">
+<div class="flex items-baseline justify-between mb-8">
+<h3 class="font-headline text-2xl font-bold">Reading Achievements</h3>
+<span class="font-label text-xs uppercase tracking-widest text-secondary cursor-pointer hover:underline">View All Milestones</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Large Achievement Card -->
+<div class="md:col-span-8 bg-surface-container-low rounded-3xl p-8 flex flex-col md:flex-row gap-8 items-center transition-all hover:bg-surface-container duration-300">
+<div class="w-40 h-40 flex-shrink-0 bg-primary-container rounded-full flex items-center justify-center text-on-primary-container shadow-inner">
+<span class="material-symbols-outlined text-6xl" style="font-variation-settings: 'FILL' 1;">auto_stories</span>
+</div>
+<div>
+<div class="flex items-center gap-2 mb-2">
+<span class="bg-secondary-fixed text-on-secondary-fixed text-[10px] px-2 py-0.5 rounded-full font-bold uppercase tracking-widest">Master Badge</span>
+</div>
+<h4 class="font-headline text-3xl font-bold mb-2 text-primary">The Centennial Librarian</h4>
+<p class="text-on-surface-variant leading-relaxed max-w-md">Awarded for cataloging and completing 100 titles within a single calendar year. You are in the top 1% of the Archive.</p>
+<div class="mt-6 flex items-center gap-4">
+<div class="flex-1 h-1.5 bg-surface-variant rounded-full overflow-hidden">
+<div class="w-[85%] h-full bg-secondary shadow-[0_0_8px_rgba(68,100,100,0.4)]"></div>
+</div>
+<span class="font-label text-[10px] font-black">85/100</span>
+</div>
+</div>
+</div>
+<!-- Small Achievement Card 1 -->
+<div class="md:col-span-4 bg-surface-container-lowest p-6 rounded-3xl flex flex-col justify-between border border-outline-variant/10 hover:bg-surface-container-low transition-colors group">
+<div class="flex justify-between items-start">
+<div class="w-12 h-12 rounded-xl bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">wb_sunny</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-primary transition-colors">verified</span>
+</div>
+<div class="mt-8">
+<h5 class="font-headline text-xl font-bold mb-1">Early Bird Reader</h5>
+<p class="font-label text-xs text-on-surface-variant uppercase tracking-tighter">50 Morning sessions logged</p>
+</div>
+</div>
+<!-- Small Achievement Card 2 -->
+<div class="md:col-span-4 bg-surface-container-lowest p-6 rounded-3xl flex flex-col justify-between border border-outline-variant/10 hover:bg-surface-container-low transition-colors group">
+<div class="flex justify-between items-start">
+<div class="w-12 h-12 rounded-xl bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">ink_pen</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-primary transition-colors">verified</span>
+</div>
+<div class="mt-8">
+<h5 class="font-headline text-xl font-bold mb-1">Critical Essayist</h5>
+<p class="font-label text-xs text-on-surface-variant uppercase tracking-tighter">Written 25 detailed reviews</p>
+</div>
+</div>
+<!-- Medium Achievement Card -->
+<div class="md:col-span-8 bg-primary/5 rounded-3xl p-8 flex items-center justify-between group cursor-pointer hover:bg-primary/10 transition-all border border-primary/5">
+<div class="flex items-center gap-6">
+<div class="w-20 h-20 rounded-2xl bg-primary text-on-primary flex items-center justify-center rotate-3 group-hover:rotate-0 transition-transform">
+<span class="material-symbols-outlined text-4xl">local_library</span>
+</div>
+<div>
+<h4 class="font-headline text-2xl font-bold text-primary">Genre Polymath</h4>
+<p class="text-on-surface-variant text-sm">Read books from over 15 distinct categories.</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary/40 group-hover:translate-x-2 transition-transform">arrow_forward_ios</span>
+</div>
+</div>
+</section>
+<!-- Account Settings: List Style with Editorial Polish -->
+<section>
+<h3 class="font-headline text-2xl font-bold mb-8">Account Settings</h3>
+<div class="space-y-4">
+<div class="flex items-center justify-between py-6 px-4 bg-surface-container-lowest rounded-2xl hover:bg-surface-container-low transition-all cursor-pointer">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-secondary">person</span>
+<div>
+<h6 class="font-bold text-on-surface">Curator Identity</h6>
+<p class="text-xs text-on-surface-variant">Manage your public profile and avatar</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline-variant">chevron_right</span>
+</div>
+<div class="flex items-center justify-between py-6 px-4 bg-surface-container-lowest rounded-2xl hover:bg-surface-container-low transition-all cursor-pointer">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-secondary">lock</span>
+<div>
+<h6 class="font-bold text-on-surface">Archive Privacy</h6>
+<p class="text-xs text-on-surface-variant">Control who sees your library and reading stats</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline-variant">chevron_right</span>
+</div>
+<div class="flex items-center justify-between py-6 px-4 bg-surface-container-lowest rounded-2xl hover:bg-surface-container-low transition-all cursor-pointer">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-secondary">notifications</span>
+<div>
+<h6 class="font-bold text-on-surface">Reading Prompts</h6>
+<p class="text-xs text-on-surface-variant">Schedule your daily reading notifications</p>
+</div>
+</div>
+<div class="w-10 h-5 bg-secondary rounded-full relative">
+<div class="absolute right-1 top-1 w-3 h-3 bg-white rounded-full"></div>
+</div>
+</div>
+<div class="flex items-center justify-between py-6 px-4 bg-surface-container-lowest rounded-2xl hover:bg-surface-container-low transition-all cursor-pointer">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-error">logout</span>
+<div>
+<h6 class="font-bold text-error">Secure Logout</h6>
+<p class="text-xs text-on-surface-variant">Safely exit your scholarly session</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pt-3 pb-8 bg-[#f9f9f9]/80 dark:bg-[#1a1c1c]/80 backdrop-blur-xl z-50 rounded-t-3xl border-t border-[#e2e2e2]/20 shadow-[0_-12px_32px_rgba(26,28,28,0.04)]">
+<a class="flex flex-col items-center justify-center text-[#1a1c1c]/50 dark:text-[#f9f9f9]/50 px-5 py-1.5 hover:text-[#443000] transition-all scale-90 duration-300" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="dashboard">dashboard</span>
+<span class="font-manrope text-[10px] font-bold uppercase tracking-widest">Dashboard</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#1a1c1c]/50 dark:text-[#f9f9f9]/50 px-5 py-1.5 hover:text-[#443000] transition-all scale-90 duration-300" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="explore">explore</span>
+<span class="font-manrope text-[10px] font-bold uppercase tracking-widest">Discover</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#1a1c1c]/50 dark:text-[#f9f9f9]/50 px-5 py-1.5 hover:text-[#443000] transition-all scale-90 duration-300" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="auto_stories">auto_stories</span>
+<span class="font-manrope text-[10px] font-bold uppercase tracking-widest">Library</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#443000] text-[#ffffff] rounded-xl px-5 py-1.5 transition-all scale-90 duration-300" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="person">person</span>
+<span class="font-manrope text-[10px] font-bold uppercase tracking-widest">Profile</span>
+</a>
+</nav>
+</body></html>
