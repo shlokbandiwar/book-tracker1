@@ -8,6 +8,7 @@ export default function Layout({ children, title = "The Archive", hideSearch = f
 
     const NAV_ITEMS = [
         { icon: 'dashboard', label: 'Dashboard', href: '/' },
+        { icon: 'search', label: 'Explore', href: '/explore' },
         { icon: 'explore', label: 'Discover', href: '/discover' },
         { icon: 'auto_stories', label: 'Library', href: '/library' },
         { icon: 'person', label: 'Profile', href: '/profile' }

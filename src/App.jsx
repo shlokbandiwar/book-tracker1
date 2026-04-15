@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { AppProvider } from './context/AppContext';
 import Dashboard from './pages/Dashboard';
 import Discover from './pages/Discover';
+import Explorepage from './pages/Explorepage';
 import MyLibrary from './pages/MyLibrary';
 import Profile from './pages/Profile';
 import BookModal from './components/BookModal';
@@ -18,6 +19,7 @@ export default function App() {
           <Routes>
             <Route path="/login" element={<Login />} />
             <Route path="/" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
+            <Route path="/explore" element={<ProtectedRoute><Explorepage /></ProtectedRoute>} />
             <Route path="/discover" element={<ProtectedRoute><Discover /></ProtectedRoute>} />
             <Route path="/library" element={<ProtectedRoute><MyLibrary /></ProtectedRoute>} />
             <Route path="/profile" element={<ProtectedRoute><Profile /></ProtectedRoute>} />
